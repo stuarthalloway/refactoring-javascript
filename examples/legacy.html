@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Event Handling Demo</title>
+  <!-- demo, to be refactored -->
+  <script type="text/javascript">
+function unc_scores() {
+  score = document.getElementById("unc_score").innerHTML;
+  document.getElementById("unc_score").innerHTML = parseInt(score) + 1;
+}
+function duke_scores() {
+  score = document.getElementById("duke_score").innerHTML;
+  document.getElementById("duke_score").innerHTML = parseInt(score) + 1;
+}
+  </script>
+</head>
+<body>
+  <h1>Event Handling</h1>
+  Click on a team to increment the team's score.
+  <div id='duke'>
+    <a id='duke_inc' href='#' onclick="duke_scores();">Duke</a>: <span id='duke_score'>0</span>
+  </div>
+  <div id='unc'>
+    <a id='unc_inc' href='#' onclick="unc_scores();">UNC</a>: <span id='unc_score'>0</span>
+  </div>
+</body>    
+</html>
